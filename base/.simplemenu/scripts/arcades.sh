@@ -1,7 +1,6 @@
 consoles="/mnt/SDCARD/.simplemenu/section_groups/arcades.ini"
 
 cat > ${consoles} <<EOF
-[CONSOLES]
 consoleList =MAME,FINALBURN NEO,DAPHNE
 
 [MAME]
