@@ -2,7 +2,7 @@ consoles="/mnt/SDCARD/.simplemenu/section_groups/consoles.ini"
 
 cat > ${consoles} <<EOF
 [CONSOLES]
-consoleList = NES,FDS,SNES,MSU-1,SGB,VIRTUAL BOY,SEGA SG-1000,MASTER SYSTEM,SEGA GENESIS,MSU-MD,SEGA CD,SEGA 32X,ATARI 2600,ATARI 5200,ATARI 7800,INTELLIVISION,NEO GEO CD,PC ENGINE,PC ENGINE CD,PLAYSTATION,ODYSSEY2
+consoleList = NES,FDS,SNES,MSU-1,SGB,VIRTUAL BOY,SEGA SG-1000,MASTER SYSTEM,SEGA GENESIS,MSU-MD,SEGA CD,SEGA 32X,ATARI 2600,ATARI 5200,ATARI 7800,INTELLIVISION,NEO GEO CD,PC ENGINE,PC ENGINE CD,TURBOGRAFX-CD,PLAYSTATION,ODYSSEY2
 
 [NES]
 execs = /mnt/SDCARD/.simplemenu/launchers/fceumm_libretro,/mnt/SDCARD/.simplemenu/launchers/nestopia_libretro,/mnt/SDCARD/.simplemenu/launchers/nestopia_miyoo_libretro
@@ -15,7 +15,7 @@ romDirs = /mnt/SDCARD/Roms/fds/
 romExts = .fds,.zip,.7z
 
 [SNES]
-execs = /mnt/SDCARD/.simplemenu/launchers/snes9x_libretro,/mnt/SDCARD/.simplemenu/launchers/snes9x2005_plus_libretro,/mnt/SDCARD/.simplemenu/launchers/snes9x2005_libretro,/mnt/SDCARD/.simplemenu/launchers/snes9x2002_libretro,/mnt/SDCARD/.simplemenu/launchers/snes9x2010_libretro,/mnt/SDCARD/.simplemenu/launchers/snes9x_next_libretro,/mnt/SDCARD/.simplemenu/launchers/mednafen_supafaust_plus_libretro,/mnt/SDCARD/.simplemenu/launchers/mednafen_supafaust_libretro
+execs = /mnt/SDCARD/.simplemenu/launchers/mednafen_supafaust_libretro,/mnt/SDCARD/.simplemenu/launchers/mednafen_supafaust_plus_libretro,/mnt/SDCARD/.simplemenu/launchers/snes9x_libretro,/mnt/SDCARD/.simplemenu/launchers/snes9x2005_plus_libretro,/mnt/SDCARD/.simplemenu/launchers/snes9x2005_libretro,/mnt/SDCARD/.simplemenu/launchers/snes9x2002_libretro,/mnt/SDCARD/.simplemenu/launchers/snes9x2010_libretro,/mnt/SDCARD/.simplemenu/launchers/snes9x_next_libretro
 romDirs = /mnt/SDCARD/Roms/snes/
 romExts = .smc,.sfc,.zip,.7z
 
@@ -101,6 +101,11 @@ execs = /mnt/SDCARD/.simplemenu/launchers/mednafen_pce_fast_libretro,/mnt/SDCARD
 romDirs = /mnt/SDCARD/Roms/pcenginecd/
 romExts = .pce,.tg16,.cue,.chd,.zip,.7z
 
+[TURBOGRAFX-CD]
+execs = /mnt/SDCARD/.simplemenu/launchers/mednafen_pcfx_libretro
+romDirs = /mnt/SDCARD/Roms/pcfx/
+romExts = .cue,.chd,.zip,.7z
+
 [PLAYSTATION]
 execs = /mnt/SDCARD/.simplemenu/launchers/pcsx_rearmed_miyoo_libretro,/mnt/SDCARD/.simplemenu/launchers/pcsx_rearmed_libretro,/mnt/SDCARD/.simplemenu/launchers/pcsx_rearmed_libretro_old,/mnt/SDCARD/.simplemenu/launchers/pcsx_rearmed_libretro_shaun
 romDirs = /mnt/SDCARD/Roms/psx/
@@ -110,4 +115,5 @@ romExts = .pbp,.chd,.zip,.cue,.img,.iso,.m3u,.mdf
 execs = /mnt/SDCARD/.simplemenu/launchers/o2em_libretro
 romDirs = /mnt/SDCARD/Roms/o2em/
 romExts = .zip,.bin
+
 EOF
